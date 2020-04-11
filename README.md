@@ -1,6 +1,6 @@
-# zow_token
+# zow_token.cr
 
-Token generator for internal API's.
+Zwartopwit Token generator for internal API's.
 
 ## Installation
 
@@ -9,7 +9,7 @@ Add the dependency to your `shard.yml`:
 ```yaml
 dependencies:
   zow_token:
-    github: bulckens/zow_token
+    github: bulckens/zow_token.cr
 ```
 
 Run `shards install`
