@@ -1,4 +1,4 @@
-require "openssl"
+require "digest"
 require "./zow_token/**"
 
 struct ZowToken
@@ -7,8 +7,6 @@ struct ZowToken
     secret : String,
     timestamp : Int64 = Time.local.to_unix_ms
   )
-    OpenSSL::Digest.new("SHA256")
-      .update("#{secret}---#{timestamp}---#{uri}")
-      .hexdigest + timestamp.to_s(16)
+    Digest::SHA256.hexdigest("#{secret}---#{timestamp}---#{uri}") + timestamp.to_s(16)
   end
 end

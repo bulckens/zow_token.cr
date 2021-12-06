@@ -1,16 +1,16 @@
 name: zow_token
-version: 0.1.0
+version: 0.1.1
 
 authors:
-  - wout <wout@mick-wout.com>
+  - wout <w@zwartopwit.be>
 
 development_dependencies:
   spec_mirror:
-    github: tilishop/spec_mirror.cr
+    github: wout/spec_mirror.cr
   ameba:
     github: crystal-ameba/ameba
-    version: ~> 0.11.0
+    version: ~> 0.14.0
 
-crystal: 0.34.0
+crystal: ~> 1.2.0
 
 license: MIT
