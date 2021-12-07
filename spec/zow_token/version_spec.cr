@@ -6,7 +6,7 @@ describe ZowToken::VERSION do
     it "matches the current version" do
       info = YAML.parse(File.read("./shard.yml"))
       version = info["version"]
-      ZowToken::VERSION.should eq("v#{version}")
+      ZowToken::VERSION.should eq(version)
     end
   end
 end
